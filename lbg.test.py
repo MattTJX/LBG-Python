@@ -11,7 +11,7 @@ from flask_api import status
 import requests
 from sys import argv
 
-PORT = int(argv[1])
+PORT = int(argv[1]) # updated to take CLI input
 BASE_URL = f"http://localhost:{PORT}"
 
 class MyLbgApiTestCase(unittest.TestCase):
