@@ -9,8 +9,9 @@ import unittest
 from lbg import item_builder
 from flask_api import status
 import requests
+from sys import argv
 
-PORT = 8080
+PORT = int(argv[1])
 BASE_URL = f"http://localhost:{PORT}"
 
 class MyLbgApiTestCase(unittest.TestCase):
@@ -43,6 +44,7 @@ class MyLbgApiTestCase(unittest.TestCase):
         Create (Post) request.  Note.  API will need to be running(!)
         """
         response = requests.post(BASE_URL + '/create', json = {'name': 'Tool', 'description': 'Hammer', 'price': 10.5})
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
     #@unittest.skip("Skip this test for now using this decorator...")
     def test_create_post_request_type(self):
