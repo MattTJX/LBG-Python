@@ -1,6 +1,6 @@
+#! /bin/bash
 # this script will build an image for the lbg.py app and deploy the container to run it
 # Clean up
-#! /bin/bash
 docker stop $(docker ps -q) || true
 docker rm $(docker ps -aq) || true
 docker rmi $(docker images -aq) || true
