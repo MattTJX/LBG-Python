@@ -15,6 +15,3 @@ docker run -d -p 5000:5000 --network lbg-pynet --name pyapp lbg-python:v1
 
 # Test
 curl http://35.230.151.94:5000/index.html
-
-#Make file executable
-chmod +x example.sh
