@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    environment {
+        PORT = 5000
+        version = v1
+    }
 
     stages {
         stage('Destroy existing') {
