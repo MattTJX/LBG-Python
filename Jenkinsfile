@@ -5,6 +5,7 @@ pipeline {
         stage('Destroy existing') {
 
             steps {
+                sh 'chmod +x tear-down.sh'
                 sh './tear-down.sh'
             }
         }
