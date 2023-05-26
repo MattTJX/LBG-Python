@@ -7,4 +7,4 @@ RUN pip3 install -r requirements.txt
 # Instruct docker that the container will be listening on 8080
 EXPOSE 5000
 # Configures the image so that the containers can be run as executables. Python is the command and lby.py is the executable
-ENTRYPOINT ["python3", "lbg.py", "", "5000"]
+ENTRYPOINT ["python3", "lbg.py", "-h", "5000"]
