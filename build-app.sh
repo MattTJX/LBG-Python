@@ -14,4 +14,5 @@ docker build -t lbg-python:v1 .
 docker run -d -p 5000:5000 --network lbg-pynet --name pyapp lbg-python:v1
 
 # Test
+sleep 5
 curl http://35.230.151.94:5000/index.html
