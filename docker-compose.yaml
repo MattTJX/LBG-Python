@@ -1,8 +1,11 @@
 version: "3.11"
 services:
   py-app:
+    image: py-app:${VERSION}
     build: ./
+    environment:
+      PORT: ${PORT}
     ports:
-    - target: 5000
+    - target: ${PORT}
       published: 5000
       protocol: tcp
