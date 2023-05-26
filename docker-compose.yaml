@@ -1,0 +1,8 @@
+version: "3.11"
+services:
+  py-app:
+    build: ./
+    ports:
+    - target: 5000
+      published: 5000
+      protocol: tcp
