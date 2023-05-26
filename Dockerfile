@@ -1,5 +1,5 @@
 # Define the base image
-FROM python:3.6
+FROM python:3.9
 # Copy the contents of the repo
 COPY . .
 # Install the dependencies from requirement.txt 
