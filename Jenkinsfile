@@ -20,5 +20,13 @@ pipeline {
              
             }
         }
+        stage('Test the application') {
+            
+            steps {
+
+                sh 'python lbg.test.py'
+
+            }
+        }
     }
 }
