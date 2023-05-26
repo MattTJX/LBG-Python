@@ -1,7 +1,7 @@
 version: "3.11"
 services:
   py-app:
-    image: py-app:${VERSION}
+    image: py-app:${version}
     build: ./
     environment:
       PORT: ${PORT}
