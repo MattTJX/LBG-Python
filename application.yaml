@@ -25,4 +25,4 @@ metadata:
               - containerPort: 5000
             env:
               - name: PORT
-              - value: 5000
+              - value: "5000"
